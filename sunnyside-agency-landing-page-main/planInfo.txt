@@ -1,0 +1,5 @@
+10 main sections of layout
+3 different fonts: Headers,text, and footer
+
+replace <br>s with spans?
+

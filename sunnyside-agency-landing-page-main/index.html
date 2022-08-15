@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div id="bodyDiv">
+    <header>
+      <div class="flex">
+        <!-- <h2>sunnyside</h2> -->
+        <img src="images/logo.svg">
+        <!-- (A) MENU WRAPPER -->
+        <nav id="hamNav">
+          <!-- (B) THE HAMBURGER -->
+          <label for="hamburger">&#9776;</label>
+          <input type="checkbox" id="hamburger"/>
+        
+          <!-- (C) MENU ITEMS -->
+          <div id="hamitems">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+
+      <!--!---------------------------------------------------------------------TO DO: replace br with span?-->
+      <div id="headerMain">
+        <h1>WE ARE <br> CREATIVES</h1>
+        <img src="images/icon-arrow-down.svg">
+      </div>
+
+
+    </header>
+    
+    <main>
+      <!--*Transform-->
+      <section class="clearfix">
+        <div id="transformImage">
+          <img src="images/mobile/image-transform.jpg" alt="Egg setting on yellow background">
+        </div>
+
+        <div id="transformContent">
+          <h2>Transform your brand</h2>
+          <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <a href="#">LEARN MORE</a>
+        </div>
+      </section>
+
+      <!--*Standout-->
+      <section class="clearfix">
+        <div id="standOutImage">
+          <img src="images/mobile/image-stand-out.jpg" alt="#">
+        </div>
+
+        <div id="standOutContent">
+          <h2>Stand out to the right audience</h2>
+          <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+          <a href="#">LEARN MORE</a>
+        </div>
+      </section>
+
+      <!--*Graphic Design-->
+      <section id="graphicDesign">
+        <div id="graphicImage">
+          <div id="graphicContent">
+            <h2>Graphic design</h2>
+            <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p>
+          </div>
+        </div>
+      </section>
+
+      <!--*Photography-->
+      <section id="photography" class="clearfix">
+
+        <div id="photographyContent">
+          <h2>Photography</h2>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+      </section>
+
+
+    </main>
+
+    <!--*Testimonials-->
+    <section id="testimonials">
+
+      <h3>CLIENT TESTIMONIALS</h3>
+
+      <!--*EMILY-->
+      <section id="emily">
+        <div id="emilyImage">
+          <img src="images/image-emily.jpg" alt="#">
+        </div>
+
+        <div id="emilyContent">
+          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <span>Emily R.</span>
+          <span>Marketing Director</span>
+        </div>
+      </section>
+
+      <!--*THOMAS-->
+      <section>
+
+        <div id="thomasImage">
+          <img src="images/image-thomas.jpg" alt="#">
+        </div>
+
+        <div id="thomasContent">
+          <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+
+          <span>Thomas S.</span>
+          <span>Chief Operating Officer</span>
+        </div>
+
+      </section>
+
+      <!--*JENNIE-->
+      <section>
+        <div id="jennieImage">
+          <img src="images/image-jennie.jpg" alt="#">
+        </div>
+
+        <div id="jennieContent">
+          <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+
+          <span>Jennie F.</span>
+          <span>Business Owner</span>
+        </div>
+
+      </section>
+
+    </section>
+
+    <footer>
+      <div id="footerImages">
+        <div id="top" class="bigHide">
+          <div id="milk" >
+            <img class="smallHide" src="images/desktop/image-gallery-milkbottles.jpg" alt="Milk bottles">
+          </div>
+  
+  
+          <div id="orange">
+            <img class="smallHide" src="images/desktop/image-gallery-orange.jpg" alt="Orange slice">
+          </div>
+        </div>
+  
+        <div id="bottom" class="bigHide">
+          <div id="cone">
+            <img class="smallHide" src="images/desktop/image-gallery-cone.jpg" alt="Ice cream cone">
+          </div>
+  
+  
+          <div id="cubes">
+            <img class="smallHide" src="images/desktop/image-gallery-sugarcubes.jpg" alt="Sugarcubes">
+          </div>
+        </div>
+      </div>
+
+
+
+      <img src="images/logo.svg">
+      <!--*Footer nav-->
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+
+      <!--*Social Media Links-->
+      <ul>
+        <li><a href="#"><img src="images/icon-facebook.svg"></a></li>
+        <li><a href="#"><img src="images/icon-instagram.svg"></a></li>
+        <li><a href="#"><img src="images/icon-twitter.svg"></a></li>
+        <li><a href="#"><img src="images/icon-pinterest.svg"></a></li>
+      </ul>
+
+    </footer>
+    
+  </div>
+
+</body>
+</html>

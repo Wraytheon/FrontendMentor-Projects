@@ -1,0 +1,498 @@
+/* Box Model Hack */
+*, *:before, *:after { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+
+}
+
+.clear {
+    clear: both;
+}
+
+/* * {
+    outline: 1px red solid;
+} */
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html, body {
+    width: 100vw;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1, h2, h3, /*div>:last-child*/ main div > a , #testimonials div > span:first-of-type {
+    font-family: 'Fraunces', serif;
+}
+p, #testimonials div > span, footer {
+    font-family: 'Barlow', sans-serif;
+}
+
+header h2 {
+    font: 600 2.5rem 'Barlow', sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/**Header*/
+header {
+    /* height: 65vh; */
+    width: 100vw;
+    background-size: cover;
+    background-image: url("/images/mobile/image-header.jpg");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: top center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.flex > img {
+    max-width: 50%;
+    max-height: 55%;
+    margin-top: 1.5rem;
+ }
+
+header > div.flex {
+    display: flex;
+    height: 20%;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem 5rem 1.5rem;
+}
+@media  and (max-width: 400px) {
+    
+}
+#headerMain {
+    padding-bottom: 5rem;
+}
+h1 {
+    letter-spacing: .7rem;
+    font-size: 4rem;
+}
+
+
+#hamitems > ul {
+    width: 35vw;
+    justify-content: space-around;
+}
+#hamitems > ul > li {
+    padding-right: 1.5rem;
+}
+#hamitems > ul > li > a{
+    font: 600 2rem 'Barlow', sans-serif;
+}
+#hamitems > ul > li a:hover {
+    background-color: antiquewhite;
+    color: black;
+    font: 600 2.5rem 'Fraunces', serif;
+    padding: 2rem 3rem 2rem 3rem;
+    border-radius: 20% / 50%;
+    transition: 0.3s;
+
+}
+
+/**Transform and Stand out sections**/
+main div[id$="Content"] :not(p), #testimonials div[id$="Content"] :not(p), main > section:nth-child(1) a, main > section:nth-child(2) a{
+    font-weight: 900;
+    width: 25rem;
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+p {
+    width: 29rem;
+    margin: auto;
+    line-height: 1.5;
+}
+#standOutContent p {
+    color: hsl(232, 10%, 55%);
+}
+#transformContent p {
+    color: hsl(232, 10%, 55%);
+}
+#transformContent > h2, #transformContent a, #standOutContent > h2, #standOutContent a {
+    color: hsl(212, 27%, 19%);
+}
+#standOutContent a, #transformContent a {
+    text-decoration: underline solid .5rem;
+}
+#standOutContent a {
+    text-decoration-color: hsla(7, 99%, 70%, .5);
+}
+#transformContent a {
+    text-decoration-color: hsl(51, 100%, 49%, .5);
+}
+
+/**Graphic Design and Photography*/
+#graphicDesign {
+    background-image: url("/images/mobile/image-graphic-design.jpg");
+    background-size: cover;
+    height: 65vh;
+}
+#graphicContent {
+    padding: 35rem 1.5rem 1.5rem 1.5rem;
+    color: hsl(167, 40%, 24%);
+    
+}
+@media screen and (min-width: 1600px) {
+    #graphicContent {
+        padding: 45rem 1.5rem 1.5rem 1.5rem;
+    }
+}
+#photography {
+    background-image: url("/images/mobile/image-photography.jpg");
+    background-size: cover;
+    height: 65vh;
+}
+#photographyContent {
+    padding: 38rem 1.5rem 1.5rem 1.5rem;
+    color: hsl(198, 62%, 26%);
+}
+@media screen and (min-width: 1600px) {
+    #photographyContent {
+        padding: 45rem 1.5rem 1.5rem 1.5rem;
+    }
+}
+
+/**Testimonials**/
+#testimonials {
+    text-align: center;
+}
+h3 {
+    color: hsla(210, 4%, 67%, 1);
+    padding-top: 5rem;
+    letter-spacing: .5rem;
+    font-size: 1.5rem;
+}
+#testimonials section {
+    padding-top: 5rem;
+}
+#testimonials p {
+    color: hsl(232, 10%, 55%);
+}
+#testimonials div[id$="Content"] p + span {
+    color: hsl(212, 27%, 19%);
+    padding-bottom: 0;
+    font-size: 2rem;
+}
+#testimonials span + span {
+    color: hsl(210, 4%, 67%);
+    font-size: 1.5rem;
+}
+/**Emily*/
+#emilyImage img{
+    width: 80px;
+    object-fit: cover;
+    border-radius: 8rem;
+}
+
+/**Thomas*/
+#thomasImage img {
+    width: 80px;
+    object-fit: cover;
+    border-radius: 8rem; 
+}
+
+/**Jennie*/
+#jennieImage img {
+    width: 80px;
+    object-fit: cover;
+    border-radius: 8rem;
+}
+
+/**Footer*/
+footer {
+    background-color: #90D4C5;
+    color: #2C7566;
+}
+#milk {
+    background-image: url("/images/mobile/image-gallery-milkbottles.jpg");
+    background-size: cover;
+    width: 50%;
+    height: 200px;
+    max-width: 100%;
+
+}
+#orange {
+    background-image: url("/images/mobile/image-gallery-orange.jpg");
+    background-size: cover;
+    width: 50%;
+    height: 200px;
+    max-width: 100%;
+}
+#cone {
+    background-image: url("/images/mobile/image-gallery-cone.jpg");
+    background-size: cover;
+    width: 50%;
+    height: 200px;
+    max-width: 100%;
+}
+#cubes {
+    background-image: url("/images/mobile/image-gallery-sugar-cubes.jpg");
+    background-size: cover;
+    width: 50%;
+    height: 200px;
+    max-width: 100%;
+}
+#bottom {
+    display: flex;
+    max-width: 100%;
+    max-height: auto;
+}
+#top {
+    display: flex;
+    max-width: 100%;
+    max-height: auto;
+}
+
+footer > img:first-of-type {
+    padding: 5rem 0 3rem 0;
+    width: 35vw;
+    display: block;
+    margin: auto;
+    filter: invert(45%) sepia(22%) saturate(790%) hue-rotate(118deg) brightness(95%) contrast(92%);
+}
+@media screen and (min-width: 1600px) {
+    footer > img:first-of-type {
+        margin-top: 6rem;
+    }
+    
+}
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+footer ul + ul {
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    padding: 8rem 9rem 2rem 9rem;
+    justify-content: space-around;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+@media screen and (max-width: 450px) {
+    .smallHide {
+        display: none;
+    }
+    p {
+        text-align: center;
+    }
+    /**Header*/
+
+
+        /**Hamburger mobile menu*/
+    /* [ON SMALL SCREENS] */
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+    }
+
+    /* (B) SHOW HAMBURGER ICON */
+    #hamNav label { 
+        display: inline-block; 
+        color: white;
+        font-style: normal;
+        font-size: 3.5rem;
+        padding: 10px;
+    }
+
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { 
+        display: none; 
+    }
+    #hamNav input:checked ~ #hamitems { 
+        display: block; 
+    }
+    #hamburger {
+        display: none;
+    }
+
+        /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { 
+        display: none; 
+    }
+    #hamNav input:checked ~ #hamitems { 
+        display: block; 
+    }
+    main div[id$="Content"] :not(p), #testimonials div[id$="Content"] :not(p), main > section:nth-child(1) a, main > section:nth-child(2) a{
+    text-align: center;
+    margin: auto;
+}
+
+}
+
+/**Media Queries*/
+@media screen and (min-width: 450px){
+    .bigHide {
+        display: none;
+    }
+    .flex > img:first-of-type {
+        margin-left: 1.5rem;
+    }
+    #hamburger {
+        display: none;
+    }
+    #hamNav label {
+        display: none;
+    }
+    header nav#hamNav,header #hamNav > #hamitems > ul {
+        display: flex;
+    }
+    #hamitems > ul > li {
+        display: flex;
+        margin-top: 1rem;
+    }
+    header {
+        background-image: url(/images/desktop/image-header.jpg);
+        background-origin: padding-box;
+        background-size: contain;
+        background-position: top;
+        background-color: #3DBEFF;
+    }
+    /**Main*/
+    main > section:first-of-type > #transformImage{
+        float: right;
+    
+    }
+    main > section:first-of-type > #transformContent {
+        float: left;
+        margin-top: 10%;
+        margin-left: 10%;
+        text-align: left;
+    }
+    main > section:nth-of-type(2) {
+        width: 100%;
+    }
+    main > section > #standOutImage {
+        float: left;
+    }
+    main > section > #standOutContent {
+        float: right;
+        margin-top: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+    main section div img {
+        width: 50vw;
+    }
+ 
+    #graphicDesign {
+        background-image: url(/images/desktop/image-graphic-design.jpg);
+        background-size: cover;
+        width: 50vw;
+        float: left;
+        margin-top: 0;
+        padding-top: 0;
+
+    }
+    #graphicDesign h2{
+        margin: auto;
+    }
+
+    #photography {
+        background-image: url(/images/desktop/image-photography.jpg);
+        width: 50vw;
+        float: right;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    #photography h2 {
+        margin: auto;
+    }
+
+   /**Testimonals*/
+    body #testimonials:not(:first-child) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 60vh;
+        justify-content: space-around;
+        padding-right: 5%;
+        padding-left: 5%;
+        text-align: center;
+    }
+    #testimonials > section > div > span + span {
+        padding-left: 2%;
+    }
+    #testimonials > h3 {
+        width: 100vw;
+    }
+
+    /**Footer*/
+    #bottom{
+        display: flex;
+    }
+    footer > #footerImages{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+    }
+
+    /* #milk {
+        background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+        background-size: cover;
+        width: 20%;
+
+    }
+    #orange {
+        background-image: url(/images/desktop/image-gallery-orange.jpg);
+        background-size: cover;
+        width: 20%;
+    }
+    #cone {
+        background-image: url(/images/desktop/image-gallery-cone.jpg);
+        background-size: cover;
+        width: 20%;
+    }
+    #cubes {
+        background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+        background-size: cover;
+        width: 20%;
+    } */
+    
+    /**Footer*/
+    footer > img:first-of-type {
+        width: 10vw;
+    }
+}
