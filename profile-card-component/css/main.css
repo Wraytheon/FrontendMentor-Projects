@@ -20,6 +20,9 @@
     clear: both;
 }
 
+html * {
+    outline: red 1px solid;
+}
 /**Base styles*/
 html {
     font-size: 62.5%;
@@ -27,4 +30,50 @@ html {
 
 body {
     font-size: 1.6rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("/frontendMentor/profile-card-component/images/bg-pattern-top.svg"), url("/frontendMentor/profile-card-component/images/bg-pattern-bottom.svg");
+    background-origin: border-box, border-box;
+    background-position: top -60vh right 50vw, bottom -120vh right -180vw;
+    background-repeat: no-repeat, no-repeat;
 }
+
+.card {
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 90vw;
+    margin: ;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.card--banner {
+    height: 20vh;
+    width: 90vw;
+    background-image: url("/frontendMentor/profile-card-component/images/bg-pattern-card.svg");
+    background-origin: border-box;
+    background-size: cover;
+}
+
+/*desktop bg
+background-image: url("/frontendMentor/profile-card-component/images/bg-pattern-top.svg"), url("/frontendMentor/profile-card-component/images/bg-pattern-bottom.svg");
+    background-origin: border-box, border-box;
+    background-position: top -60vh right 50vw, bottom -120vh right -50vw;
+    background-repeat: no-repeat, no-repeat;
+*/
+/* .bg-top {
+    max-width: 100%;
+    height: 100vh; 
+    background: hsl(185, 75%, 39%) url("/frontendMentor/profile-card-component/images/bg-pattern-top.svg") left 50% top 50% no-repeat;
+}
+.bg-bottom {
+    max-width: 100%;
+    height: 100vh; 
+    background: hsl(185, 75%, 39%) url("/frontendMentor/profile-card-component/images/bg-pattern-bottom.svg") right bottom no-repeat;
+} */
