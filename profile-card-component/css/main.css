@@ -72,13 +72,32 @@ body {
 }
 
 .card--pfp {
-    position: absolute;
-    bottom: 45%;
-    left: 35%;
-}
-.card--pfp > img {
-    border-radius: 50%;
+    width: 35%;
+    max-width: 35%;
+    height: auto;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 18%;
     border: .5rem solid white;
+    background-color: white;
+    border-radius: 50%;
+    
+}
+
+.card--pfp > img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    /* width: 50%; */
+    /* max-width: 100%; */
+    /* height: auto; */
+    background-color: white;
+    border-radius: 50%;
+    display: block;
 }
 
 .card--content {
@@ -86,24 +105,25 @@ body {
     justify-content: space-around;
     justify-content: center;
     line-height: 1;
-    margin-top: 1em;
+    margin-top: 30%;
+
 }
 
 h1 {
-    margin: .5em .5em 0 0;
     font-size: 2em;
     color: hsl(229, 23%, 23%);
+    margin: 0 .5em .5em 0;
 }
 
 .card--content > span {
-    margin: .5em 0;
     font-size: 2em;
     color: HSL(227, 10%, 46%);
 }
 
 .card--location {
+    font-size: 1.25em;
     display: block;
-    color: hsl(0, 0%, 59%);
+    color: HSL(227, 10%, 46%);
     margin: 0 0 2em 0;
 }
 
@@ -143,22 +163,11 @@ hr {
     width: 100em;
     font-size: .9em;
 }
-/* .card--stats > span {
-    display: inline;
-} */
-/*desktop bg
-background-image: url("/frontendMentor/profile-card-component/images/bg-pattern-top.svg"), url("/frontendMentor/profile-card-component/images/bg-pattern-bottom.svg");
-    background-origin: border-box, border-box;
-    background-position: top -60vh right 50vw, bottom -120vh right -50vw;
-    background-repeat: no-repeat, no-repeat;
-*/
-/* .bg-top {
-    max-width: 100%;
-    height: 100vh; 
-    background: hsl(185, 75%, 39%) url("/frontendMentor/profile-card-component/images/bg-pattern-top.svg") left 50% top 50% no-repeat;
+
+/**Responsive**/
+@media screen and (min-width: 560px) {
+    .card--pfp {
+    top: 15%;
+    }
+
 }
-.bg-bottom {
-    max-width: 100%;
-    height: 100vh; 
-    background: hsl(185, 75%, 39%) url("/frontendMentor/profile-card-component/images/bg-pattern-bottom.svg") right bottom no-repeat;
-} */
