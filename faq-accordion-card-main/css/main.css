@@ -1,0 +1,40 @@
+/* Box Model Hack */
+*, *:before, *:after { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+
+}
+
+.clear {
+    clear: both;
+}
+
+/* html * {
+    outline: red 1px solid;
+} */
+/**Base styles*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    height: 100vh;
+}
+
+.card {
+    width: 80vw;
+}
