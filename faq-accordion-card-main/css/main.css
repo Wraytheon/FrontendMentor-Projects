@@ -35,6 +35,75 @@ body {
     height: 100vh;
 }
 
-.card {
-    width: 80vw;
+@media (max-width: 1439px) {
+    h1 {
+        text-align: center;
+    }
+    
 }
+
+.accordion__title, h1 {
+    font-weight: 700;
+}
+
+/**-----------------------------*/
+
+.card {
+    background-color: white;
+    margin: 50% auto;
+    border-radius: 20px;
+}
+
+@media (max-width: 1439px) {
+    .card {
+        width: 80vw;
+    }
+}
+
+.accordion {
+    padding: 2em 1.5em;
+}
+
+.accordion__content {
+    /* display: block; */
+    background-color: white;
+}
+
+.accordion__title {
+   /* TODO Fix color */
+    color: hsl(238, 29%, 16%);
+    background-color: white;
+    border: none;
+    font-size: 2rem;
+    
+}
+
+.accordion__title--active {
+    font-weight: 400;
+}
+
+.accordion__arrow {
+    font-size: 3rem;
+    
+}
+
+
+hr {
+    color: hsl(240, 5%, 91%);
+    height: 2px;
+    background-color: hsl(240, 5%, 91%);
+    border: none;
+    margin: .5em;
+}
+
+
+
+/* .accordion__title::after {
+    content: url("../images/icon-arrow-down.svg");
+    float: right;
+    color: hsl(14, 88%, 65%);
+}
+
+.accordion__title::after.active {
+    transform: rotate(180deg);
+} */
