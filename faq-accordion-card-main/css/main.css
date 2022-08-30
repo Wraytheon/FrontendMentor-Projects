@@ -35,6 +35,9 @@ body {
     height: 100vh;
 }
 
+h1 {
+    margin: 0 0 0 0;
+}
 @media (max-width: 1439px) {
     h1 {
         text-align: center;
@@ -50,13 +53,16 @@ body {
 
 .card {
     background-color: white;
-    margin: 50% auto;
     border-radius: 20px;
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
 }
 
 @media (max-width: 1439px) {
     .card {
         width: 80vw;
+        height: 75vh;
     }
 }
 
@@ -82,6 +88,10 @@ body {
     font-weight: 400;
 }
 
+.accordion__item > p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
 .accordion__arrow {
     font-size: 3rem;
     
@@ -97,7 +107,12 @@ hr {
 }
 
 
-
+/**---Card graphic---*/
+.card__graphic img {
+    width: 60%;
+    position: relative;
+    left: 50%;
+}
 /* .accordion__title::after {
     content: url("../images/icon-arrow-down.svg");
     float: right;
